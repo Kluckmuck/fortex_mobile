@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'user.dart';
 
 void main() => runApp(new MyApp());
 
@@ -25,6 +26,7 @@ class _LoginPageState extends State<LoginPage> {
 
   final TextEditingController _emailFilter = new TextEditingController();
   final TextEditingController _passwordFilter = new TextEditingController();
+  var user = new User('','');
   String _email = "";
   String _password = "";
 
@@ -35,17 +37,17 @@ class _LoginPageState extends State<LoginPage> {
 
   void _emailListen() {
     if (_emailFilter.text.isEmpty) {
-      _email = "";
+      user.username = "";
     } else {
-      _email = _emailFilter.text;
+      user.username = _emailFilter.text;
     }
   }
 
   void _passwordListen() {
     if (_passwordFilter.text.isEmpty) {
-      _password = "";
+      user.password = "";
     } else {
-      _password = _passwordFilter.text;
+      user.password = _passwordFilter.text;
     }
   }
 
@@ -118,7 +120,7 @@ class _LoginPageState extends State<LoginPage> {
   // These functions can self contain any user auth logic required, they all have access to _email and _password
 
   void _loginPressed () {
-    print('The user wants to login with $_email and $_password');
+    print(user.toJson());
   }
 
 
