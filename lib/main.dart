@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'user.dart';
+import 'history.dart';
 
 void main() => runApp(new MyApp());
 
@@ -28,8 +29,6 @@ class _LoginPageState extends State<LoginPage> {
   final TextEditingController _emailFilter = new TextEditingController();
   final TextEditingController _passwordFilter = new TextEditingController();
   var user = new User('','');
-  String _email = "";
-  String _password = "";
 
   _LoginPageState() {
     _emailFilter.addListener(_emailListen);
@@ -109,10 +108,6 @@ class _LoginPageState extends State<LoginPage> {
             child: new Text('Login'),
             onPressed: _loginPressed,
           ),
-          new FlatButton(
-            child: new Text('Forgot Password?'),
-            onPressed: _passwordReset,
-          )
         ],
       ),
     );
@@ -125,6 +120,10 @@ class _LoginPageState extends State<LoginPage> {
     http.post(url, body: user.toJson())
         .then((response) {
           if (response.statusCode == 201) {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => HistoryScreen()),
+            );
             //print("Response body: ${response.body}");
           }
           else {
@@ -133,11 +132,5 @@ class _LoginPageState extends State<LoginPage> {
       //print("Response status: ${response.statusCode}");
     });
   }
-
-
-  void _passwordReset () {
-    print("The user wants a password reset request sent to $_email");
-  }
-
-
 }
+
