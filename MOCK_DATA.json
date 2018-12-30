@@ -1,0 +1,49 @@
+{
+  "login": [
+    {
+      "id": 1,
+      "userName": "Pataha",
+      "password": "Aleut"
+    },
+    {
+      "id": 2,
+      "userName": "Babakandesa",
+      "password": "Korean"
+    },
+    {
+      "id": 3,
+      "userName": "Sosnovo-Ozerskoye",
+      "password": "Cuban"
+    },
+    {
+      "id": 4,
+      "userName": "Gala",
+      "password": "Crow"
+    },
+    {
+      "id": 5,
+      "userName": "Dongfeng",
+      "password": "Chickasaw"
+    },
+    {
+      "userName": "doodle",
+      "password": "blue",
+      "id": 6
+    },
+    {
+      "userName": "doodle",
+      "password": "blue",
+      "id": 7
+    },
+    {
+      "username": "hej",
+      "password": "då",
+      "id": 8
+    },
+    {
+      "username": "hej",
+      "password": "då",
+      "id": 9
+    }
+  ]
+}

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:http/http.dart' as http;
 import 'user.dart';
 
 void main() => runApp(new MyApp());
@@ -120,7 +121,17 @@ class _LoginPageState extends State<LoginPage> {
   // These functions can self contain any user auth logic required, they all have access to _email and _password
 
   void _loginPressed () {
-    print(user.toJson());
+    var url = "http://localhost:3000/login";
+    http.post(url, body: user.toJson())
+        .then((response) {
+          if (response.statusCode == 201) {
+            //print("Response body: ${response.body}");
+          }
+          else {
+            //TODO: Show error in APP
+          }
+      //print("Response status: ${response.statusCode}");
+    });
   }
 
 
