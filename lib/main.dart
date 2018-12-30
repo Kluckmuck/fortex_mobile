@@ -28,6 +28,7 @@ class _LoginPageState extends State<LoginPage> {
 
   final TextEditingController _emailFilter = new TextEditingController();
   final TextEditingController _passwordFilter = new TextEditingController();
+  final _formKey = GlobalKey<FormState>();
   var user = new User('','');
 
   _LoginPageState() {
@@ -79,16 +80,26 @@ class _LoginPageState extends State<LoginPage> {
       child: new Column(
         children: <Widget>[
           new Container(
-            child: new TextField(
+            child: new TextFormField(
               controller: _emailFilter,
+              validator: (value) {
+                if (value.isEmpty) {
+                  return 'Enter your username';
+                }
+              },
               decoration: new InputDecoration(
                   labelText: 'Username'
               ),
             ),
           ),
           new Container(
-            child: new TextField(
+            child: new TextFormField(
               controller: _passwordFilter,
+              validator: (value) {
+                if (value.isEmpty) {
+                  return 'Enter your password';
+                }
+              },
               decoration: new InputDecoration(
                   labelText: 'Password'
               ),

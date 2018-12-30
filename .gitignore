@@ -9,6 +9,7 @@
 .buildlog/
 .history
 .svn/
+public/app/MOCK_DATA.json
 
 # IntelliJ related
 *.iml
