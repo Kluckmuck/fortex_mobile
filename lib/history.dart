@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'user.dart';
 import 'waybill.dart';
+import 'detail.dart';
 import 'dart:async';
 import 'dart:convert';
 
@@ -40,10 +41,44 @@ class HistoryScreen extends StatelessWidget {
             builder: (context, snapshot) {
               if (!snapshot.hasData) return Container();
               List<Waybill> waybills = snapshot.data;
-              return new ListView(
-                children: waybills.map((waybill) =>
-                  Text(waybill.name)).toList()
-              );
+              return new ListView.builder(
+                  itemCount: waybills == null ? 0 : waybills.length,
+                  itemBuilder: (BuildContext context, int index) {
+                    return new Container(
+                      child: new Center(
+                          child: new Column(
+                            // Stretch the cards in horizontal axis
+                            crossAxisAlignment: CrossAxisAlignment.stretch,
+                            children: <Widget>[
+                              new Card(
+                                child: new Column(
+                                  children: <Widget>[
+                                    new ListTile(
+                                      title: Text(waybills[index].name),
+                                      subtitle: Text(waybills[index].name),
+                                    ),
+                                    ButtonTheme.bar( // make buttons use the appropriate styles for cards
+                                      child: ButtonBar(
+                                        children: <Widget>[
+                                          FlatButton(
+                                            child: const Text('DETAILS'),
+                                            onPressed: () {
+                                              Navigator.push(
+                                                context,
+                                                MaterialPageRoute(builder: (context) => DetailScreen()),
+                                              );
+                                            },
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  ]
+                                ),
+                              ),
+                            ],
+                          )),
+                    );
+                  });
             },
           ),
         ),
