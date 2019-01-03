@@ -13,7 +13,12 @@ class MyApp extends StatelessWidget {
       theme: new ThemeData(
           primarySwatch: Colors.blue
       ),
-      home: new LoginPage(),
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('Login'),
+        ),
+        body: LoginPage(),
+      ),
     );
   }
 }
@@ -23,78 +28,37 @@ class LoginPage extends StatefulWidget {
   State<StatefulWidget> createState() => new _LoginPageState();
 }
 
-
 class _LoginPageState extends State<LoginPage> {
 
-  final TextEditingController _emailFilter = new TextEditingController();
-  final TextEditingController _passwordFilter = new TextEditingController();
   final _formKey = GlobalKey<FormState>();
   var user = new User('','');
 
-  _LoginPageState() {
-    _emailFilter.addListener(_emailListen);
-    _passwordFilter.addListener(_passwordListen);
-  }
-
-  void _emailListen() {
-    if (_emailFilter.text.isEmpty) {
-      user.username = "";
-    } else {
-      user.username = _emailFilter.text;
-    }
-  }
-
-  void _passwordListen() {
-    if (_passwordFilter.text.isEmpty) {
-      user.password = "";
-    } else {
-      user.password = _passwordFilter.text;
-    }
-  }
-
   @override
   Widget build(BuildContext context) {
-    return new Scaffold(
-      appBar: _buildBar(context),
-      body: new Container(
-        padding: EdgeInsets.all(16.0),
-        child: new Column(
-          children: <Widget>[
-            _buildTextFields(),
-            _buildButtons(),
-          ],
-        ),
-      ),
-    );
-  }
-
-  Widget _buildBar(BuildContext context) {
-    return new AppBar(
-      title: new Text("Fortex Login"),
-      centerTitle: true,
-    );
-  }
-
-  Widget _buildTextFields() {
-    return new Container(
-      child: new Column(
+    return Form(
+      key: _formKey,
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
-          new Container(
-            child: new TextFormField(
-              controller: _emailFilter,
-              validator: (value) {
-                if (value.isEmpty) {
-                  return 'Enter your username';
-                }
-              },
-              decoration: new InputDecoration(
-                  labelText: 'Username'
+          Padding(
+            padding: EdgeInsets.all(8.0),
+            child:           new Container(
+              child: new TextFormField(
+                validator: (value) {
+                  if (value.isEmpty) {
+                    return 'Enter your username';
+                  }
+                },
+                decoration: new InputDecoration(
+                    labelText: 'Username'
+                ),
               ),
             ),
           ),
-          new Container(
+          Padding(
+          padding: EdgeInsets.all(8.0),
+          child: new Container(
             child: new TextFormField(
-              controller: _passwordFilter,
               validator: (value) {
                 if (value.isEmpty) {
                   return 'Enter your password';
@@ -105,28 +69,30 @@ class _LoginPageState extends State<LoginPage> {
               ),
               obscureText: true,
             ),
-          )
-        ],
-      ),
-    );
-  }
-
-  Widget _buildButtons() {
-    return new Container(
-      child: new Column(
-        children: <Widget>[
-          new RaisedButton(
-            child: new Text('Login'),
-            onPressed: _loginPressed,
+          ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: RaisedButton(
+              onPressed: () {
+                // Validate will return true if the form is valid, or false if
+                // the form is invalid.
+                if (_formKey.currentState.validate()) {
+                  // If the form is valid, we want to show a Snackbar
+                  Scaffold.of(context)
+                      .showSnackBar(SnackBar(content: Text('Processing Data')));
+                }
+                _loginPOST();
+              },
+              child: Text('Submit'),
+            ),
           ),
         ],
       ),
     );
   }
 
-  // These functions can self contain any user auth logic required, they all have access to _email and _password
-
-  void _loginPressed () {
+  void _loginPOST () {
     var url = "http://localhost:3000/login";
     http.post(url, body: user.toJson())
         .then((response) {
@@ -138,6 +104,7 @@ class _LoginPageState extends State<LoginPage> {
             //print("Response body: ${response.body}");
           }
           else {
+            print("print false");
             //TODO: Show error in APP
           }
       //print("Response status: ${response.statusCode}");
