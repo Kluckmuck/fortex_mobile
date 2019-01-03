@@ -20,6 +20,10 @@ class DetailScreen extends StatelessWidget {
         body: Center(
           child: new Column(
             children: <Widget>[
+              new ListTile(
+                title: Text("Published at: " + waybill.date),
+                subtitle: Text("By: " + waybill.employee),
+              ),
               new Expanded(
                 child: new ListView.builder(
                     itemCount: waybill.elementStrings.length,
