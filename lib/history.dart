@@ -65,7 +65,7 @@ class HistoryScreen extends StatelessWidget {
                                             onPressed: () {
                                               Navigator.push(
                                                 context,
-                                                MaterialPageRoute(builder: (context) => DetailScreen()),
+                                                MaterialPageRoute(builder: (context) => DetailScreen(waybill: waybills[index])),
                                               );
                                             },
                                           ),
