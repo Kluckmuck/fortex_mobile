@@ -9,7 +9,7 @@ class ElementString {
     return ElementString(
         id:parsedJson['id'],
         name:parsedJson['name'],
-        value:parsedJson['vale']
+        value:parsedJson['value']
     );
   }
 }
