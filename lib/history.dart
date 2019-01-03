@@ -27,22 +27,22 @@ class HistoryScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Fetch Data Example',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Fetch Data Example'),
+          title: Text(user.username),
         ),
         body: Center(
           child: FutureBuilder<List<Waybill>>(
             future: fetchPost(),
             builder: (context, snapshot) {
               if (!snapshot.hasData) return Container();
-              List<Waybill> posts = snapshot.data;
+              List<Waybill> waybills = snapshot.data;
               return new ListView(
-                children: posts.map((post) => Text(post.name)).toList(),
+                children: waybills.map((waybill) =>
+                  Text(waybill.name)).toList()
               );
             },
           ),
