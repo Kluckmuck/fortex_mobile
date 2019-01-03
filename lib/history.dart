@@ -55,7 +55,7 @@ class HistoryScreen extends StatelessWidget {
                                   children: <Widget>[
                                     new ListTile(
                                       title: Text(waybills[index].name),
-                                      subtitle: Text(waybills[index].name),
+                                      subtitle: Text(waybills[index].date),
                                     ),
                                     ButtonTheme.bar( // make buttons use the appropriate styles for cards
                                       child: ButtonBar(

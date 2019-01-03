@@ -13,6 +13,12 @@ class DetailScreen extends StatelessWidget {
           title: Text("Details"),
         ),
         body: Center(
+          child: RaisedButton(
+            onPressed: () {
+              Navigator.pop(context);
+            },
+            child: Text('Go back!'),
+          ),
         ),
       ),
     );
