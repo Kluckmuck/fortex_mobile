@@ -31,119 +31,741 @@
       "id": 6
     },
     {
-      "userName": "doodle",
-      "password": "blue",
+      "username": "gsgsd",
+      "password": "hej",
       "id": 7
     },
     {
-      "username": "hej",
-      "password": "då",
+      "username": "gsgsd",
+      "password": "hej",
       "id": 8
     },
     {
-      "username": "hej",
-      "password": "då",
+      "username": "gsgsd",
+      "password": "hej",
       "id": 9
     },
     {
-      "username": "hej",
-      "password": "då",
+      "username": "gsgsd",
+      "password": "hej",
       "id": 10
+    }
+  ],
+  "waybills": [
+    {
+      "id": 1,
+      "employee": "Ara",
+      "name": "Jatri",
+      "date": "5/9/2018",
+      "elementString": [
+        {
+          "id": 1,
+          "value": "Cape cobra",
+          "name": "Kragujevac"
+        },
+        {
+          "id": 2,
+          "value": "Squirrel, eastern fox",
+          "name": "Camaçari"
+        },
+        {
+          "id": 3,
+          "value": "Openbill stork",
+          "name": "Hexi"
+        },
+        {
+          "id": 4,
+          "value": "Mouse, four-striped grass",
+          "name": "Sol’tsy"
+        }
+      ]
     },
     {
-      "username": "hej",
-      "password": "då",
-      "id": 11
+      "id": 2,
+      "employee": "Rolph",
+      "name": "Flashspan",
+      "date": "5/26/2018",
+      "elementString": [
+        {
+          "id": 1,
+          "value": "Egret, cattle",
+          "name": "Jing’an"
+        },
+        {
+          "id": 2,
+          "value": "Hummingbird (unidentified)",
+          "name": "Rio Piracicaba"
+        },
+        {
+          "id": 3,
+          "value": "Black-throated butcher bird",
+          "name": "Asahikawa"
+        }
+      ]
     },
     {
-      "username": "hej",
-      "password": "då",
-      "id": 12
+      "id": 3,
+      "employee": "Theda",
+      "name": "Twitterlist",
+      "date": "2/2/2018",
+      "elementString": [
+        {
+          "id": 1,
+          "value": "Owl, burrowing",
+          "name": "Nakhon Nayok"
+        },
+        {
+          "id": 2,
+          "value": "Toucan, red-billed",
+          "name": "Longxian"
+        },
+        {
+          "id": 3,
+          "value": "African skink",
+          "name": "Benito Juarez"
+        },
+        {
+          "id": 4,
+          "value": "Lion, australian sea",
+          "name": "Chaykovskaya"
+        }
+      ]
     },
     {
-      "username": "hej",
-      "password": "då",
-      "id": 13
+      "id": 4,
+      "employee": "Eveleen",
+      "name": "Innojam",
+      "date": "11/19/2018",
+      "elementString": [
+        {
+          "id": 1,
+          "value": "Bustard, denham's",
+          "name": "Kamennyye Potoki"
+        },
+        {
+          "id": 2,
+          "value": "Macaw, green-winged",
+          "name": "pamas"
+        },
+        {
+          "id": 3,
+          "value": "Galapagos penguin",
+          "name": "Zhangyang"
+        },
+        {
+          "id": 4,
+          "value": "Stork, jabiru",
+          "name": "Huangzhu"
+        },
+        {
+          "id": 5,
+          "value": "Dolphin, common",
+          "name": "Novoul’yanovsk"
+        }
+      ]
     },
     {
-      "username": "hej",
-      "password": "då",
-      "id": 14
+      "id": 5,
+      "employee": "Katrine",
+      "name": "Reallinks",
+      "date": "9/11/2018",
+      "elementString": [
+        {
+          "id": 1,
+          "value": "Red-tailed phascogale",
+          "name": "Postojna"
+        },
+        {
+          "id": 2,
+          "value": "Badger, european",
+          "name": "Zhanggongmiao"
+        },
+        {
+          "id": 3,
+          "value": "Common zebra",
+          "name": "Bojawa"
+        },
+        {
+          "id": 4,
+          "value": "South African hedgehog",
+          "name": "Astromil"
+        },
+        {
+          "id": 5,
+          "value": "Black spider monkey",
+          "name": "Calabaca"
+        }
+      ]
     },
     {
-      "username": "hej",
-      "password": "då",
-      "id": 15
+      "id": 6,
+      "employee": "Gabe",
+      "name": "Meeveo",
+      "date": "2/27/2018",
+      "elementString": [
+        {
+          "id": 1,
+          "value": "Peregrine falcon",
+          "name": "Wobulenzi"
+        },
+        {
+          "id": 2,
+          "value": "Dove, galapagos",
+          "name": "Panyuran"
+        },
+        {
+          "id": 3,
+          "value": "Robin, white-throated",
+          "name": "Épinal"
+        },
+        {
+          "id": 4,
+          "value": "Porcupine, north american",
+          "name": "Klos"
+        },
+        {
+          "id": 5,
+          "value": "Heron, giant",
+          "name": "Bo Kluea"
+        }
+      ]
     },
     {
-      "username": "hej",
-      "password": "då",
-      "id": 16
+      "id": 7,
+      "employee": "Aliza",
+      "name": "Skidoo",
+      "date": "10/6/2018",
+      "elementString": [
+        {
+          "id": 1,
+          "value": "Long-billed corella",
+          "name": "Tantu"
+        },
+        {
+          "id": 2,
+          "value": "Cook's tree boa",
+          "name": "Yermolayevo"
+        },
+        {
+          "id": 3,
+          "value": "Aardwolf",
+          "name": "Cikadondongdesa"
+        }
+      ]
     },
     {
-      "username": "hej",
-      "password": "då",
-      "id": 17
+      "id": 8,
+      "employee": "Peggi",
+      "name": "Kaymbo",
+      "date": "9/3/2018",
+      "elementString": [
+        {
+          "id": 1,
+          "value": "Ornate rock dragon",
+          "name": "Mari"
+        },
+        {
+          "id": 2,
+          "value": "Carpet snake",
+          "name": "Greensboro"
+        },
+        {
+          "id": 3,
+          "value": "Southern white-crowned shrike",
+          "name": "Atlanta"
+        },
+        {
+          "id": 4,
+          "value": "Pie, indian tree",
+          "name": "Chai Nat"
+        }
+      ]
     },
     {
-      "username": "hej",
-      "password": "då",
-      "id": 18
+      "id": 9,
+      "employee": "Vasily",
+      "name": "Muxo",
+      "date": "3/19/2018",
+      "elementString": [
+        {
+          "id": 1,
+          "value": "Boat-billed heron",
+          "name": "Garmeh"
+        },
+        {
+          "id": 2,
+          "value": "Glossy ibis",
+          "name": "K’anak’erravan"
+        },
+        {
+          "id": 3,
+          "value": "Sockeye salmon",
+          "name": "Querecotillo"
+        },
+        {
+          "id": 4,
+          "value": "Tortoise, burmese brown mountain",
+          "name": "New Westminster"
+        },
+        {
+          "id": 5,
+          "value": "Alligator, mississippi",
+          "name": "Sendafa"
+        }
+      ]
     },
     {
-      "username": "hej",
-      "password": "då",
-      "id": 19
+      "id": 10,
+      "employee": "Steve",
+      "name": "Flashdog",
+      "date": "11/29/2017",
+      "elementString": [
+        {
+          "id": 1,
+          "value": "Galapagos sea lion",
+          "name": "Pidsandawan"
+        },
+        {
+          "id": 2,
+          "value": "Skua, great",
+          "name": "Quzi"
+        },
+        {
+          "id": 3,
+          "value": "Heron, grey",
+          "name": "Drzewica"
+        },
+        {
+          "id": 4,
+          "value": "Striped hyena",
+          "name": "Brzeźnica"
+        }
+      ]
     },
     {
-      "username": "hej",
-      "password": "då",
-      "id": 20
+      "id": 11,
+      "employee": "Ninnette",
+      "name": "Vitz",
+      "date": "5/12/2018",
+      "elementString": [
+        {
+          "id": 1,
+          "value": "Turkey, common",
+          "name": "Skópelos"
+        },
+        {
+          "id": 2,
+          "value": "Booby, blue-faced",
+          "name": "Higashine"
+        },
+        {
+          "id": 3,
+          "value": "Woodchuck",
+          "name": "Lesozavodsk"
+        },
+        {
+          "id": 4,
+          "value": "Cape fox",
+          "name": "Unidos"
+        },
+        {
+          "id": 5,
+          "value": "Agouti",
+          "name": "Santiago de los Caballeros"
+        }
+      ]
     },
     {
-      "username": "hej",
-      "password": "då",
-      "id": 21
+      "id": 12,
+      "employee": "Bette",
+      "name": "Devcast",
+      "date": "10/4/2018",
+      "elementString": [
+        {
+          "id": 1,
+          "value": "Northern phalarope",
+          "name": "Takengon"
+        },
+        {
+          "id": 2,
+          "value": "Rufous tree pie",
+          "name": "Mangqu"
+        },
+        {
+          "id": 3,
+          "value": "Tsessebe",
+          "name": "Yingchengzi"
+        },
+        {
+          "id": 4,
+          "value": "Golden-mantled ground squirrel",
+          "name": "Stříbro"
+        },
+        {
+          "id": 5,
+          "value": "Red-shouldered glossy starling",
+          "name": "Bima"
+        }
+      ]
     },
     {
-      "username": "hej",
-      "password": "då",
-      "id": 22
+      "id": 13,
+      "employee": "Sheba",
+      "name": "Eazzy",
+      "date": "1/29/2018",
+      "elementString": [
+        {
+          "id": 1,
+          "value": "Fox, savanna",
+          "name": "Elbasan"
+        },
+        {
+          "id": 2,
+          "value": "American racer",
+          "name": "Qimeng"
+        },
+        {
+          "id": 3,
+          "value": "Cardinal, black-throated",
+          "name": "Kankara"
+        }
+      ]
     },
     {
-      "username": "hej",
-      "password": "då",
-      "id": 23
+      "id": 14,
+      "employee": "Janela",
+      "name": "Dynazzy",
+      "date": "7/15/2018",
+      "elementString": [
+        {
+          "id": 1,
+          "value": "Starfish, crown of thorns",
+          "name": "Skövde"
+        },
+        {
+          "id": 2,
+          "value": "American black bear",
+          "name": "Wailang"
+        },
+        {
+          "id": 3,
+          "value": "Savanna baboon",
+          "name": "Tejen"
+        },
+        {
+          "id": 4,
+          "value": "Vervet monkey",
+          "name": "Degerfors"
+        }
+      ]
     },
     {
-      "username": "hej",
-      "password": "då",
-      "id": 24
+      "id": 15,
+      "employee": "Sigrid",
+      "name": "Npath",
+      "date": "12/26/2017",
+      "elementString": [
+        {
+          "id": 1,
+          "value": "Tayra",
+          "name": "Podosinovets"
+        },
+        {
+          "id": 2,
+          "value": "Gambel's quail",
+          "name": "Santo Tomás"
+        },
+        {
+          "id": 3,
+          "value": "Jaguarundi",
+          "name": "Tugdan"
+        },
+        {
+          "id": 4,
+          "value": "Common genet",
+          "name": "Kristiansand S"
+        },
+        {
+          "id": 5,
+          "value": "African wild dog",
+          "name": "Shalakusha"
+        }
+      ]
     },
     {
-      "username": "hej",
-      "password": "då",
-      "id": 25
+      "id": 16,
+      "employee": "Ashia",
+      "name": "Livetube",
+      "date": "9/19/2018",
+      "elementString": [
+        {
+          "id": 1,
+          "value": "Peccary, collared",
+          "name": "Yovon"
+        },
+        {
+          "id": 2,
+          "value": "Capuchin, black-capped",
+          "name": "Ambelón"
+        },
+        {
+          "id": 3,
+          "value": "Aardwolf",
+          "name": "Dapawan"
+        }
+      ]
     },
     {
-      "username": "hej",
-      "password": "då",
-      "id": 26
+      "id": 17,
+      "employee": "Laurie",
+      "name": "Avaveo",
+      "date": "9/29/2018",
+      "elementString": [
+        {
+          "id": 1,
+          "value": "North American porcupine",
+          "name": "Al Qarmadah"
+        },
+        {
+          "id": 2,
+          "value": "Cook's tree boa",
+          "name": "Ýpsonas"
+        },
+        {
+          "id": 3,
+          "value": "Cottonmouth",
+          "name": "Funehikimachi-funehiki"
+        }
+      ]
     },
     {
-      "username": "hej",
-      "password": "då",
-      "id": 27
+      "id": 18,
+      "employee": "Dugald",
+      "name": "Ntags",
+      "date": "12/20/2017",
+      "elementString": [
+        {
+          "id": 1,
+          "value": "Booby, masked",
+          "name": "Deán Funes"
+        },
+        {
+          "id": 2,
+          "value": "Lappet-faced vulture",
+          "name": "Tailing"
+        },
+        {
+          "id": 3,
+          "value": "Mongoose, banded",
+          "name": "Além Paraíba"
+        }
+      ]
     },
     {
-      "username": "hej",
-      "password": "då",
-      "id": 28
+      "id": 19,
+      "employee": "Rhys",
+      "name": "Meeveo",
+      "date": "11/7/2018",
+      "elementString": [
+        {
+          "id": 1,
+          "value": "Bleu, red-cheeked cordon",
+          "name": "Kombandaru"
+        },
+        {
+          "id": 2,
+          "value": "Golden-mantled ground squirrel",
+          "name": "Mengenkrajan"
+        },
+        {
+          "id": 3,
+          "value": "Sifaka, verreaux's",
+          "name": "Misau"
+        },
+        {
+          "id": 4,
+          "value": "Prairie falcon",
+          "name": "Estreito Câmara de Lobos"
+        }
+      ]
     },
     {
-      "username": "",
-      "password": "då",
-      "id": 29
+      "id": 20,
+      "employee": "Freddy",
+      "name": "Linktype",
+      "date": "3/1/2018",
+      "elementString": [
+        {
+          "id": 1,
+          "value": "Roadrunner, greater",
+          "name": "Wangbuzhuang"
+        },
+        {
+          "id": 2,
+          "value": "Camel, dromedary",
+          "name": "Aleksotas"
+        },
+        {
+          "id": 3,
+          "value": "Common pheasant",
+          "name": "Matango"
+        },
+        {
+          "id": 4,
+          "value": "Tinamou, elegant crested",
+          "name": "Naran-mandokhu Somon"
+        },
+        {
+          "id": 5,
+          "value": "Hoffman's sloth",
+          "name": "Lahad Datu"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "employee": "Lawton",
+      "name": "Flashdog",
+      "date": "12/31/2017",
+      "elementString": [
+        {
+          "id": 1,
+          "value": "Western palm tanager (unidentified)",
+          "name": "Nizhnevartovsk"
+        },
+        {
+          "id": 2,
+          "value": "Snake, tiger",
+          "name": "São João del Rei"
+        },
+        {
+          "id": 3,
+          "value": "Deer, mule",
+          "name": "Abéché"
+        },
+        {
+          "id": 4,
+          "value": "Fat-tailed dunnart",
+          "name": "Cincinnati"
+        },
+        {
+          "id": 5,
+          "value": "White-throated monitor",
+          "name": "Zhuangta"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "employee": "Barr",
+      "name": "Quaxo",
+      "date": "8/29/2018",
+      "elementString": [
+        {
+          "id": 1,
+          "value": "Pied kingfisher",
+          "name": "Naha-shi"
+        },
+        {
+          "id": 2,
+          "value": "Roadrunner, greater",
+          "name": "Buenos Aires"
+        },
+        {
+          "id": 3,
+          "value": "Red howler monkey",
+          "name": "Ferraria"
+        },
+        {
+          "id": 4,
+          "value": "Goose, spur-winged",
+          "name": "Stockholm"
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "employee": "Mitchell",
+      "name": "Lazz",
+      "date": "9/16/2018",
+      "elementString": [
+        {
+          "id": 1,
+          "value": "Lynx, african",
+          "name": "Shetan"
+        },
+        {
+          "id": 2,
+          "value": "American woodcock",
+          "name": "Puerto Berrío"
+        },
+        {
+          "id": 3,
+          "value": "Cape fox",
+          "name": "El Quiteño"
+        },
+        {
+          "id": 4,
+          "value": "Bleu, blue-breasted cordon",
+          "name": "Lincheng"
+        },
+        {
+          "id": 5,
+          "value": "Pie, indian tree",
+          "name": "‘Irbīn"
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "employee": "Ernestus",
+      "name": "Feednation",
+      "date": "3/29/2018",
+      "elementString": [
+        {
+          "id": 1,
+          "value": "Deer, mule",
+          "name": "Lamakera Dua"
+        },
+        {
+          "id": 2,
+          "value": "Red-billed hornbill",
+          "name": "Maquiapo"
+        },
+        {
+          "id": 3,
+          "value": "Malay squirrel (unidentified)",
+          "name": "Biao"
+        },
+        {
+          "id": 4,
+          "value": "Rainbow lory",
+          "name": "Moglicë"
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "employee": "Filberte",
+      "name": "Blogspan",
+      "date": "5/26/2018",
+      "elementString": [
+        {
+          "id": 1,
+          "value": "African clawless otter",
+          "name": "Stamford"
+        },
+        {
+          "id": 2,
+          "value": "Cormorant, great",
+          "name": "Mengcheng Chengguanzhen"
+        },
+        {
+          "id": 3,
+          "value": "Lemur, lesser mouse",
+          "name": "Chiang Rai"
+        }
+      ]
     }
   ]
 }

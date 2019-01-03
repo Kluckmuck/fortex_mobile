@@ -99,7 +99,7 @@ class _LoginPageState extends State<LoginPage> {
           if (response.statusCode == 201) {
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => HistoryScreen()),
+              MaterialPageRoute(builder: (context) => HistoryScreen(user: user)),
             );
             //print("Response body: ${response.body}");
           }
